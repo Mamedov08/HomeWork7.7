@@ -1,16 +1,16 @@
-package com.company;
-
 public class Magic extends Hero{
-    public Magic(int health, int damage, String superpowertype) {
-        super(health, damage, superpowertype);
+
+
+    public Magic(int hp, int damage) {
+        super(hp, damage);
+    }
+    @Override
+    public void applySuperAbility() {
+        System.out.println("Magic применил суперспособность ");
     }
 
     @Override
-    public void applySuperAbility() {
-
+    public String info() {
+        return super.info();
     }
-
-
-
-    }
-
+}

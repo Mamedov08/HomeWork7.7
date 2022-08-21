@@ -1,18 +1,34 @@
-package com.company;
-
 public abstract class Hero implements HavingSuperAbility{
-    public int health;
-    public int damage;
-    public String superpowertype;
+    private int hp;
+    private int damage;
 
-    public Hero(int health, int damage, String superpowertype) {
-        this.health = health;
+    public Hero(int hp, int damage) {
+        this.hp = hp;
         this.damage = damage;
-        this.superpowertype = superpowertype;
     }
 
-    @Override
-    public void applySuperAbility() {
+    public int getHp() {
+        return hp;
+    }
 
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+
+    public String getSuperAbility() {
+        return superAbility;
+    }
+
+    private String superAbility;
+    public String info() {
+        return getHp() + " " + getDamage();
     }
 }

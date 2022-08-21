@@ -1,22 +1,19 @@
-package com.company;
-
 public class Main {
-
     public static void main(String[] args) {
-        Warrior warrior = new Warrior(233, 432, "Сильная");
-        Magic warri = new Magic(233, 432, "Сильная");
-        Medic warr = new Medic(233, 432, "Сильная");
-        Hero[] str = {warr, warri, warrior};
-
-        for (Hero sr : str) {
-            sr.applySuperAbility();
-        }
+        Medic medic = new Medic(650, 550, 50);
+        Magic magic = new Magic(600, 40);
+        Warrior warrior = new Warrior(500, 50);
 
         Hero[] hero = {
-                warrior, warri, warr
+                medic, warrior, magic
         };
         for (int i = 0; i < hero.length; i++) {
-            System.out.println(warr.increaseExperience() + " " + i);
+            System.out.println(hero[i].info());
+            hero[i].applySuperAbility();
+            if (hero[i] == medic) {
+                System.out.println(medic.increaseExperience());
+
+            }
         }
     }
 }

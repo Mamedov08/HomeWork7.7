@@ -1,5 +1,3 @@
-package com.company;
-
-public interface HavingSuperAbility  {
-   public void applySuperAbility();
+public interface HavingSuperAbility{
+   void applySuperAbility();
 }

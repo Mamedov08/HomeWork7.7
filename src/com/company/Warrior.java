@@ -1,13 +1,17 @@
-package com.company;
-
 public class Warrior extends Hero{
-    public Warrior(int health, int damage, String superpowertype) {
-        super(health, damage, superpowertype);
+
+
+    public Warrior(int hp, int damage) {
+        super(hp, damage);
     }
 
     @Override
     public void applySuperAbility() {
-        System.out.println("Warrior применил суперспособность CRITICAL DAMAGE");
+        System.out.println("Warrior применил суперспособность CRITICAL DAMAGE”. ");
+    }
 
+    @Override
+    public String info() {
+        return super.info();
     }
 }
