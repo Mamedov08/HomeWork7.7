@@ -1,3 +1,5 @@
+package com.company;
+
 public class Medic extends Hero{
     private int healPoints;
     public int increaseExperience(){
@@ -5,8 +7,7 @@ public class Medic extends Hero{
         return healPoints + percent;
     }
 
-    public Medic(int hp, int damage, int healPoints) {
-        super(hp, damage);
+    public Medic(int healPoints) {
         this.healPoints = healPoints;
     }
 
@@ -15,7 +16,7 @@ public class Medic extends Hero{
     }
 
     public void setHealPoints(int healPoints) {
-        this.healPoints = (int) healPoints;
+        this.healPoints = healPoints;
     }
 
     @Override

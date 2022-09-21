@@ -1,6 +1,8 @@
+import com.company.Medic;
+
 public class Main {
     public static void main(String[] args) {
-        Medic medic = new Medic(650, 550, 50);
+        Medic medic = new Medic(324);
         Magic magic = new Magic(600, 40);
         Warrior warrior = new Warrior(500, 50);
 
